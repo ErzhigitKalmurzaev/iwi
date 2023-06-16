@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "email": "asdfg@gmail.com",
+      "password": "$2a$10$M5cvaVv1jFxkHL4g7v7FBOHRWVTO2T55JK1.v08bCqaaLkcqoWjFK",
+      "id": 1
+    },
+    {
+      "email": "cvbnm@gmail.com",
+      "password": "$2a$10$3o2zEvuNzV6VFe56iSb4W.pZipK1IkpCuutrQJ0u8NRE5to7smXN.",
+      "id": 2
+    },
+    {
+      "email": "iva@mail.ru",
+      "password": "$2a$10$de.ZJhE/bWvcCV1WTLPoSeEJnblzWsv48ORUEhIRgxbeJlpF4YNdq",
+      "id": 3
+    },
+    {
+      "email": "ivan@mail.ru",
+      "password": "$2a$10$e2ODRgzsXEjWLYiZJ70kMex8Cmg/4iiAju6G2uiJQVFfBu/bmLDhO",
+      "id": 4
+    },
+    {
+      "email": "erzigitkalmurza@gmail.com",
+      "password": "$2a$10$VpIo2yRSL/nds6tykERMteTglu5vNZBJdC6fkHy3mrOj6H64WL0Em",
+      "id": 5
+    },
+    {
+      "email": "erzigitkalmurzaev@gmail.com",
+      "password": "$2a$10$aIyheeLfcANMWZXVDq8Ce.3E.FFuWXSJHygkr.3wPUZy9lM9HtEYK",
+      "id": 6
+    },
+    {
+      "email": "erzigitkalmurza@mail.ru",
+      "password": "$2a$10$42yQCRZkK3kfJa1Q.0YjB.8Y4ZDIXk5TM56dv0U0YJdfJAp0CuMUC",
+      "id": 7
+    },
+    {
+      "email": "max123@mail.ru",
+      "password": "$2a$10$el5FE5IXDwdlKaxefcFgLe.gQWyhHw8sjKisQa7GZHj5bwTVa1biW",
+      "id": 8
+    },
+    {
+      "email": "erjigitich@gmail.com",
+      "password": "$2a$10$5pI.ocIXUhBmge2nhyhFLeK.Bf4A/YQBtwIV9s4PcG1ynVp1eatR.",
+      "id": 9
+    },
+    {
+      "email": "erzigitkalmurzaev@mail.ru",
+      "password": "$2a$10$wrpan4vWVPns3BDPLo6lsOtZ1u.La9vAOxX3V2uYn65NfrgytAXXi",
+      "id": 10
+    },
+    {
+      "email": "erzigitkalmurzaevich@mail.ru",
+      "password": "$2a$10$bqQGCu4J58cPP0cv1l7pCO8uy3Zlgt7PzxKKlVlHHNlbfaFTXC0Ea",
+      "id": 11
+    },
+    {
+      "email": "akdil@gmail.com",
+      "password": "$2a$10$GlzsyGD4MyHQcP8Cjb5oDe11w8QSuYkjHVusjfbGFQB8ukBOfkMze",
+      "id": 12
+    }
+  ]
+}

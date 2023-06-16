@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "json-server": "^0.17.3",
+    "json-server-auth": "^2.1.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"json-server-auth --port 8080 server/db.json\" \"cd client && npm start\""
+  }
+}

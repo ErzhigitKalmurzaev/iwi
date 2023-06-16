@@ -1,0 +1,190 @@
+.profileMain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    &-inner{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__registration{
+        margin-bottom: 50px;
+        &-button{
+            display: flex;
+            justify-content: space-evenly;
+            font-family: "Inter";
+            font-weight: 700;
+            color: white;
+            width: 260px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ea003d;
+            padding-top: 1px;
+            cursor: pointer;
+            &-icon{
+                font-size: 20px;
+                margin-top: -3px;
+            }
+        }
+    }
+    &__profile{
+        display: block;
+        margin-bottom: 50px;
+        &_title{
+            font-family: 'Inter';
+            font-weight: 700;
+            color: white;
+            line-height: 20px;
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 0;
+        }
+        &_user{
+            width: 43px;
+            height: 43px;
+            background-color: #73a32f;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            margin-left: 8px;
+            margin-top: 2px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            p{
+                font-size: 26px;
+                font-weight: bold;
+            }
+        }
+        &_userAdd{
+            width: 43px;
+            height: 43px;
+            background-color: #1f1b2e;
+            border: none;
+            color: #a5a1b2;
+            border-radius: 8px;
+            margin-left: 14px;
+            margin-top: 2px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            p{
+                font-size: 32px;
+            }
+        }
+    }
+    &__favorites{
+        margin: 40px 0 0 0;
+        &_inner{
+            width: 100%;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            display: flex;
+        }
+        &_title{
+            display: flex;
+            &_text{
+                font-family: 'Inter';
+                font-weight: 700;
+                color: white;
+                line-height: 20px;
+                font-style: 24px;
+                margin-bottom: 30px;
+            }
+            &_icon{
+                font-size: 22px;
+                color: white;
+                margin-top: 20px;
+                margin-left: 5px;
+            }
+        }
+    }
+    &-container{
+        display: grid;
+        row-gap: 25px;
+        margin-bottom: 20px;
+        &-subList{
+            display: grid;
+            grid-template-columns: 0.45fr 0.28fr 0.27fr;
+            column-gap: 25px;
+        }
+        &-operationList{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__item{
+        height: 120px;
+        font-family: 'Inter', sans-serif;
+        color: white;
+        background-color: #1f1b2e;
+        border-radius: 10px;
+        padding-left: 15px;
+        position: relative;
+        &-title{
+            margin-top: 10px;
+            font-size: 19px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        &-suggestion{
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+        }
+        &_notifications{
+            width: 100%;
+            background-color: #1f1b2e;
+            border-radius: 10px;
+            display: flex;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            justify-content: center;
+            &-title{
+                font-weight: 600;
+                font-size: 15px;
+            }
+            &-icon{
+                font-size: 20px;
+                margin-top: 15px;
+                margin-right: 6px;
+                color: #ea003d;
+            }
+        }
+    }
+}
+
+.operationList__item{
+    width: 150px;
+    height: 120px;
+    background-color: #1f1b2e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    &-container{
+        margin: auto 0;
+        text-align: center;
+        font-family: 'Inter';
+        color: white;
+        line-height: 5px;
+        &-icon{
+            color: #ea003d;
+            font-size: 28px;
+        }
+        &-title{
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.profileMain__favorites_inner::-webkit-scrollbar {
+    width: 0;
+}

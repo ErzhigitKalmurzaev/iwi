@@ -1,0 +1,33 @@
+.similar{
+    width: 100%;
+    margin: 20px auto;
+    &__title{
+        display: flex;
+        &-text{
+            font-family: 'Inter';
+            font-weight: 700;
+            color: white;
+            line-height: 20px;
+            font-style: 24px;
+            margin-bottom: 30px;
+        }
+        &-icon{
+            font-size: 22px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+    }
+    &__row{
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+    }
+}
+.similar__row::-webkit-scrollbar {
+    width: 0;
+}
+.similar-section{
+    margin-bottom: 40px;
+}

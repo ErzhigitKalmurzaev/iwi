@@ -1,0 +1,133 @@
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08060e;
+    animation-name: appear;
+    animation-duration: 300ms;
+    opacity: 0.9;
+    &__inner{
+        width: 500px;
+        height: 450px;
+    }
+    &__header{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        &_welcome{
+            width: 300px;
+            position: relative;
+            text-align: center;
+            line-height: 15px;
+            &_text{
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                font-family: 'Inter', sans-serif;
+                margin-bottom: 0;
+            }
+            &_email{
+                width: 300px;
+                font-size: 15px;
+                font-weight: 600;
+                display: flex;
+                color: rgba(255,255,255,.48);
+                font-family: 'Inter';
+                cursor: pointer;
+                justify-content: center;
+                &_icon{
+                    margin-left: 5px;
+                    margin-top: 13px;
+                    font-size: 17px;
+                }
+                &_text{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &__form{
+        text-align: center;
+        &_field{
+            width: 300px;
+            margin: 0 auto;
+            position: relative;
+            cursor: pointer;
+            &_icon{
+                font-size: 18px;
+                color: white;
+                position: absolute;
+                right: 0;
+                top: 25%;
+            }
+        }
+        &_input{
+            color: white;
+            width: 300px;
+            height: 45px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+            margin-bottom: 20px;
+            outline: none;
+        }
+        &_button{
+            width: 300px;
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ea003d;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+        &_button-block{
+            width: 300px;
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ea003d;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+.close__button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    &-icon{
+        color: white;
+        font-size: 24px;
+
+    }
+}
+.link_to_signIn{
+    color: rgba(255,255,255,.78);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Inter';
+    margin-top: 10px;
+    cursor: pointer;
+}
+.link_to_signIn:hover{
+    color: white;
+    transition: all 0.2s ease-in;
+}

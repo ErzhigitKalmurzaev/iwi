@@ -1,0 +1,257 @@
+@import '../../index.scss'; 
+
+.footer{
+    width: 80%;
+    margin: 0 auto;
+    @include _990{
+        display: none;
+    }
+    &__container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        font-family: 'Inter';
+        .list{ 
+            margin-top: 50px;
+            list-style-type: none;
+            padding: 0;
+            &__title{
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                display: block;
+                @include _1200{
+                    font-size: 13px;
+                }
+            }
+            &__item{
+                text-decoration: none;
+                color: rgba(255,255,255,.48);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 29px;
+                @include _1200{
+                    font-size: 11px;
+                }
+            }
+            .activate{
+                color: linear-gradient(-45deg,#c447ff,#ea003d);
+            }
+            &__item:hover{
+                color: white;
+                transition: color 0.2s ease-in;
+            }
+            &__button{
+                width: 200px;
+                height: 40px;
+                border-radius: 5px;
+                font-size: 14px;
+                background-color: #1F1B2E;
+                color: white;
+                @include _1200{
+                    width: 150px;
+                    height: 35px;
+                    font-size: 12px;
+                }
+            }
+            &__button:hover{
+                background-color: #332d45;
+                transition: all 0.3s ease-in;
+            }
+            &__icons{
+                margin-top: 15px;
+                display: flex;
+                &-button{
+                    width: 40px;
+                    height: 38px;
+                    border-radius: 10px;
+                    color: white;
+                    padding: 0;
+                    border: 0;
+                    margin-right: 10px;
+                    background-color: #1F1B2E;
+                    font-size: 20px;
+                    cursor: pointer;
+                    @include _1200{
+                        width: 35px;
+                        height: 32px;
+                        font-size: 16px;
+                    }
+                }
+                &-button:hover{
+                    background-color: #332d45;
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
+        &-blurb{
+            &-iconBlock{
+                width: 104px;
+                height: 104px;
+                border-radius: 20%;
+                margin: 50px auto;
+                box-shadow: 0px 0px 87px -3px #A869F0;
+                background: linear-gradient(180deg, #A869F0 0%, #834CC2 100%);
+                .footer-icon{
+                    color: white;
+                    font-size: 64px;
+                    margin: 20px;
+                }
+            }
+            &-text{
+                color: rgba(255,255,255,.48);
+                text-align: center;
+                font-size: 15px;
+                margin-top: -20px;
+                margin-left: 15px;
+            }
+        }
+    }
+    &__container::before{
+        content: '';
+        position: absolute;
+        height: 0.5px;
+        width: 80%;
+        background-color: rgba(255,255,255,.48);
+    }
+    
+    &__socialMedia{
+        width: 100%;
+        height: 100px;
+        font-family: 'Inter';
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        &-buttons{
+            width: 50%;
+            @include _1200{
+                width: 60%;
+                height: 38px;
+                font-size: 14px;
+            }
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin-top: 40px;
+            font-family: 'Inter';
+            .socialBtn{
+                width: 130px;
+                height: 44px;
+                background-color:#1F1B2E;
+                color: white;
+                font-size: 18px;
+                border-radius: 5px;
+                border: none;
+                display: flex;
+                padding-left: 10px;
+                padding-top: 10px;
+                cursor: pointer;
+                @include _1200{
+                    width: 110px;
+                    height: 37px;
+                    font-size: 14px;
+                }
+            }
+            .socialBtn:hover{
+                background-color: #332d45;
+                transition: all 0.3s ease-in;
+            }
+            .socialAllBtn{
+                width: 176px;
+                height: 44px;
+                background-color:#1F1B2E;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                font-size: 23px;
+                display: flex;
+                padding-left: 10px;
+                padding-top: 10px;
+                cursor: pointer;
+                @include _1200{
+                    width: 140px;
+                    height: 38px;
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: white;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    @include _1200{
+                        font-size: 12px;
+                        margin-top: 1px;
+                        margin-left: 3px;
+                    }
+                }
+            }
+            .socialAllBtn:hover{
+                background-color: #332d45;
+                transition: all 0.3s ease-in;
+            }
+            .BtnTitle{
+                margin-left: 10px;
+                margin-top: -10px;
+                text-align: start;
+            }
+            p{
+                font-size: 13px;
+                font-weight: 600;
+                color: white;
+                margin: 0;
+                @include _1200{
+                    font-size: 12px;
+                }
+            }
+            label{
+                font-size: 10px;
+                font-weight: 600;
+                color: rgba(255, 255, 255, 0.72);
+                margin: 0;
+            }
+        }
+        &-icons{
+            width: 27%;
+            display: flex;
+            margin-top: 40px;
+            justify-content: space-between;
+            .social-icons{
+                width: 40px;
+                height: 40px;
+                background-color: #1F1B2E;
+                border-radius: 50%;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .social-icons:hover{
+                background-color: #332d45;
+                transition: all 0.3s ease-in;
+            }
+        }
+    }
+    &__socialMedia:before{
+        content: '';
+        position: absolute;
+        height: 0.5px;
+        width: 80%;
+        background-color: rgba(255,255,255,.48);
+    }
+    &__copyrights{
+        font-family: 'Inter';
+        font-weight: 600;
+        color: rgba(255,255,255,.48);
+        margin-bottom: 50px;
+        &-site{
+            font-size: 15px;
+            line-height: 10px;
+        }
+        &-content{
+            font-size: 13px;
+            line-height: 10px;
+        }
+    }
+}
