@@ -30,7 +30,7 @@ export const Context = (props) => {
         if(localStorage.getItem("favorites") !== null){
             setFavorite(JSON.parse(localStorage.getItem("favorites")))
         }
-
+        
     }, [])
     
     useEffect(() => {

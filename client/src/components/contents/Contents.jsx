@@ -26,7 +26,7 @@ const Contents = ({title, type = '', query}) => {
             des: item.description,
             genre: item.genres,
             year: item.year,
-            poster: item?.poster?.previewUrl,
+            poster: item?.poster?.previewUrl || 'https://i.redd.it/ikd0wcmwvsi01.jpg',
             persons: item.persons,
             length: item?.movieLength,
             rating: item?.rating?.imdb,

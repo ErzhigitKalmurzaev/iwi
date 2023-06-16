@@ -16,10 +16,12 @@ const Card = (props) => {
     const { addFavorite, favorite, remoteFavorite } = useContext(CustomContext);
 
     useEffect(() => {
+        setSelect(false)
         const ids = favorite.map(item => item.id);
         if(ids.includes(id)){
             setSelect(true);
         }
+        console.log(poster)
     }, [favorite, id])
 
     const handleIconClick = (event) => {
