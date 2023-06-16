@@ -18,13 +18,23 @@ const ProfilePage = () => {
     const [sign, setSign] = useState(false);
     const [show, setShow] = useState(false);
 
-    const { favorite, user } = useContext(CustomContext);
+    const { favorite, user, setUser, setFavorite } = useContext(CustomContext);
 
     const handleShowModal = () => {
         setShow(false);
     }
     if(user){
         console.log(user)
+    }
+
+    const logoutUser = (e) => {
+        e.preventDefault();
+
+        localStorage.removeItem("user");
+        localStorage.removeItem("favorites");
+
+        setUser({});
+        setFavorite([]);
     }
 
     return (
@@ -57,6 +67,9 @@ const ProfilePage = () => {
                                                 <p>+</p>
                                             </Button>
                                         </div>
+                                        <button className="profileMain__profile_button" onClick={logoutUser}>
+                                            Выйти
+                                        </button>
                                     </div>
                         }
                         <div className="profileMain-container">

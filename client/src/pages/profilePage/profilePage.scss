@@ -32,6 +32,9 @@
     &__profile{
         display: block;
         margin-bottom: 50px;
+        &_inner{
+            display: flex;
+        }
         &_title{
             font-family: 'Inter';
             font-weight: 700;
@@ -77,6 +80,17 @@
             p{
                 font-size: 32px;
             }
+        }
+        &_button{
+            margin-top: 20px;
+            width: 100px;
+            height: 35px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ea003d;
+            color: white;
+            cursor: pointer;
+            margin-left: 8px;
         }
     }
     &__favorites{
