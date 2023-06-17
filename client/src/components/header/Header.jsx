@@ -4,6 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import { BiSearch, BiBell, BiUser } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { CustomContext } from '../../context/context';
+import { useNavigate } from 'react-router-dom';
 
 import { movieGenres, seriesGenres, cartoonGenres } from '../../dictionary/Dictionary';
 
@@ -16,6 +17,7 @@ const Header = () => {
     const [type, setType] = useState('');
     const [genres, setGenres] = useState({});
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         // eslint-disable-next-line default-case
@@ -53,7 +55,7 @@ const Header = () => {
             <div className={`header${isHovered ? ' hover' : ''}`}>
                 <div className="header__left">
                     <div className="header__left-logo">
-                        <img src={Logo} alt="Logo" />
+                        <img src={Logo} alt="Logo" onClick={() => navigate('/')}/>
                     </div>
                     <div className="header__left-items">
                         <Link className='header__left-items-item' to={`/`}>Мой Иви</Link>

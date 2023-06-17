@@ -1,0 +1,40 @@
+@import '../../index.scss';
+
+.bottom{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    background: #1F1B2E;
+    opacity: 0.9;
+    @include _990{
+        display: block;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        margin-top: 5px;
+        color: rgba(255, 255, 255, 0.48);
+        font-family: 'Inter';
+        text-align: center;
+        display: block;
+        &_icon{
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        p{
+            line-height: 5px;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        :hover{
+            color: white;
+        }
+    }
+    .active{
+        color: white;
+    }
+}

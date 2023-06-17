@@ -59,6 +59,11 @@
       "email": "akdil@gmail.com",
       "password": "$2a$10$GlzsyGD4MyHQcP8Cjb5oDe11w8QSuYkjHVusjfbGFQB8ukBOfkMze",
       "id": 12
+    },
+    {
+      "email": "erzigitkalmurzaev@gmail.kg",
+      "password": "$2a$10$3LjM1W8bV6N/FQaoax3nsOIWnEOafyikQUXgyHf1uKbJxZt.v/oy6",
+      "id": 13
     }
   ]
 }

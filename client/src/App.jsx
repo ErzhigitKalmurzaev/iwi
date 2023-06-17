@@ -9,6 +9,7 @@ import MovieSinglePage from './pages/movieSinglePage/MovieSinglePage';
 import SelectGenrePage from './pages/selectGenrePage/selectGenrePage';
 import SwitchPage from './pages/switchPage/SwitchPage';
 import ProfilePage from './pages/profilePage/profilePage';
+import BottomHeader from './components/bottomHeader/BottomHeader';
 
 import './index.scss';
 import React from 'react';
@@ -29,6 +30,7 @@ function App() {
                   </Routes>
               </Suspense>
           </main>
+          <BottomHeader/>
           <Footer/>
       </div>
     </Router>

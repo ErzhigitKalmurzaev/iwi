@@ -23,9 +23,6 @@ const ProfilePage = () => {
     const handleShowModal = () => {
         setShow(false);
     }
-    if(user){
-        console.log(user)
-    }
 
     const logoutUser = (e) => {
         e.preventDefault();

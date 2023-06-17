@@ -21,7 +21,6 @@ const Card = (props) => {
         if(ids.includes(id)){
             setSelect(true);
         }
-        console.log(poster)
     }, [favorite, id])
 
     const handleIconClick = (event) => {
