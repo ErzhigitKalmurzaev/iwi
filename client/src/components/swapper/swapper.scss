@@ -1,7 +1,25 @@
+@import '../../index.scss';
+
 .swiper {
     width: 100%;
-    height: auto;
-  }
+    height: 350px;
+    @include _1070{
+      height: 280px
+    }
+    @include _730{
+      height: 220px;
+    }
+    @include _550 {
+      height: 210px;
+    }
+    @include _420{
+      display: none; 
+    }
+}
+
+.mySwiper{
+  position: relative;
+}
   
   .swiper-slide {
     width: 100%;
@@ -23,21 +41,54 @@
 
   .swiper-slide-active img{
     width: 120%;
+    @include _550{
+      width: 150%;
+    }
   }
   .swiper-slide-next img{
-    width: 80%;
+    width: 70%;
+    @include _550{
+      width: 60%;
+    }
   }
   .swiper-slide-prev img{
-    width: 80%;
+    width: 70%;
+    @include _550{
+      width: 60%;
+    }
   }
 
   .swiper-button-next:after{
-    margin-left: -160px;
+    position: absolute;
+    right: 50px;
     color: hsla(0,0%,100%,.72);
+    @include _1070{
+      font-size: 30px;
+      right: 20px;
+    }
+    @include _550 {
+      font-size: 22px;
+      right: 10px;
+    }
+    @include _420{
+      right: 5px;
+    }
   }
   .swiper-button-prev:after{
-    margin-left: 160px;
+    position: absolute;
+    left: 50px;
     color: hsla(0,0%,100%,.72);
+    @include _1070{
+      font-size: 30px;
+      left: 20px;
+    }
+    @include _550 {
+      font-size: 22px;
+      left: 10px;
+    }
+    @include _420{
+      left: 5px;
+    }
   }
   
   @media only screen and (min-width: 769px) {
@@ -79,23 +130,49 @@
 
   .subscription{
     width: 80%;
+    @include _1070{
+      width: 95%;
+    }
     height: 50px;
     margin: 40px auto;
     border-radius: 10px;
     background-image: url(https://solea-parent.dfs.ivi.ru/picture/bypass/teaserTilePattern_a.svg);
     &__text{
       font-family: 'Inter';
-      font-weight: 500;
+      font-weight: 700;
       width: 300px;
       margin: 0 auto;
       color: white;
       display: flex;
+      justify-content: center;
       .icon{
         width: 30px;
         height: 28px;
         margin-top: 10px;
         margin-right: 5px;
         background-color: linear-gradient(206.71deg, #F1A104 12.38%, #F87B08 40.8%, #FFBD00 75.54%);
+      }
+    }
+    @include _730{
+      width: 90%;
+      margin: 20px auto;
+      &__text{
+        font-size: 14px;
+        .icon{
+          font-size: 16px;
+        }
+      }
+    }
+    @include _550 {
+      height: 40px;
+      text-align: center;
+      &__text{
+        font-size: 13px;
+        .icon{
+          width: 20px;
+          height: 20px;
+          font-size: 14px;
+        }
       }
     }
   }

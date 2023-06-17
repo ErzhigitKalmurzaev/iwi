@@ -1,5 +1,13 @@
+@import '../../index.scss';
+
 .singlePage{
     width: 80%;
+    @include _1070{
+        width: 90%;
+    }
+    @include _550 {
+        width: 96%;
+    }
     position: relative;
     margin: 0 auto;
     display: flex;

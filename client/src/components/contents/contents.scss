@@ -1,8 +1,16 @@
+@import '../../index.scss';
+
 .content{
     width: 100%;
+    height: auto;
     margin: 20px auto;
+    @include _1070{
+        margin: -20px auto;
+    }
     &__title{
         display: flex;
+        margin: 0;
+        line-height: 5px;
         &-text{
             font-family: 'Inter';
             font-weight: 700;
@@ -17,13 +25,30 @@
             margin-top: 20px;
             margin-left: 5px;
         }
+        @include _1070{
+            &-text{
+                font-size: 21px;
+            }
+            &-icon{
+                margin-top: 18px;
+                font-size: 22px;
+            }
+        }
+        @include _550{
+            &-text{
+                font-size: 18px;
+            }
+            &-icon{
+                margin-top: 16px;
+                font-size: 20px;
+            }
+        }
     }
     &__row{
         width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
         display: flex;
-        // justify-content: center;
     }
 }
 .content__row::-webkit-scrollbar {
@@ -31,6 +56,9 @@
 }
 .content-section{
     margin-bottom: 40px;
+    @include _1070{
+        margin: 0;
+    }
 }
 .error-title{
     color: white;

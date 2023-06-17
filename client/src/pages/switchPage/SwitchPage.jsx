@@ -5,6 +5,8 @@ import Contents from "../../components/contents/Contents";
 import Swapper from "../../components/swapper/Swapper";
 import { movieDict, seriesDict, cartoonDict } from "../../dictionary/Dictionary";
 
+import '../pages.scss';
+
 const SwitchPage = () => {
     const [genres, setGenres] = useState([]);
     const {type} = useParams();

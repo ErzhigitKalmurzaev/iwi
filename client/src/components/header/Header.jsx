@@ -82,7 +82,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="header__right">
-                    <button className="header__right-redButton">Смотреть 30 дней бесплатно</button>
+                    <div className="header__right-redButton">Смотреть 30 дней бесплатно</div>
                     <button className="header__right-searchButton">
                         <BiSearch className='search-icon'/>
                         <p className="header__right-searchButton-text">Поиск</p>

@@ -67,27 +67,27 @@ export const homeDict = {
         'type': 'tv-series',
         'rating.kp': '7.0'
     },
-    // 'Современные мультфильмы': {
-    //     'type': 'cartoon',
-    //     'year': '2022'
-    // },
-    // 'Лучшие фильмы': {
-    //     'type': 'movie',
-    //     'rating.kp': '8.0'
-    // },
-    // 'Фильмы-новинки': {
-    //     'type': 'movie',
-    //     'year': '2023'
-    // },
-    // 'Американские комедии': {
-    //     'type': 'movie',
-    //     'genres.name': 'комедия',
-    //     'countries.name': 'США'
-    // },
-    // 'Русские сериалы': {
-    //     'type': 'tv-series',
-    //     'countries.name': 'Россия' 
-    // }
+    'Современные мультфильмы': {
+        'type': 'cartoon',
+        'year': '2022'
+    },
+    'Лучшие фильмы': {
+        'type': 'movie',
+        'rating.kp': '8.0'
+    },
+    'Фильмы-новинки': {
+        'type': 'movie',
+        'year': '2023'
+    },
+    'Американские комедии': {
+        'type': 'movie',
+        'genres.name': 'комедия',
+        'countries.name': 'США'
+    },
+    'Русские сериалы': {
+        'type': 'tv-series',
+        'countries.name': 'Россия' 
+    }
 }
 
 export const movieGenres = {

@@ -4,6 +4,8 @@ import { homeDict } from "../dictionary/Dictionary";
 import Swapper from "../components/swapper/Swapper";
 import Contents from "../components/contents/Contents";
 
+import './pages.scss';
+
 const Home = () => {
 
     const elements = Object.entries(homeDict).map(([key, value], i) => {

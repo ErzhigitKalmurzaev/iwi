@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .header{
     width: 80%;
     height: 72px;
@@ -6,10 +8,16 @@
     grid-template-columns: 1.3fr 0.7fr;
     padding: 0;
     font-family: 'Inter';
+    @include _1070{
+        width: 96%;
+    }
     &__left{
         width: 80%;
         display: flex;
         padding: 5px 10px;
+        @include _1330 {
+            width: 100%;
+        }
         &-logo img{
             width: auto;
             height: inherit;
@@ -89,15 +97,26 @@
         padding: 5px 10px;
         justify-content: space-between;
         &-redButton{
-            width: auto;
+            min-width: 190px;
             height: 35px;
             background-color: #ea003d;
             color: white;
             font-family: 'Inter';
+            text-align: center;
             border: none;
             border-radius: 8px;
             margin-top: 9px;
+            font-weight: 700;
+            font-size: 12px;
             cursor: pointer;
+            @include _550{
+                min-width: 190px;
+                height: 28px;
+                font-size: 5px;
+                margin-right: 0;
+                margin-top: 6px;
+                background-color: green;
+            }
         }
         &-searchButton{
             width: 100px;
@@ -135,6 +154,9 @@
                 font-size: 26px;
                 margin-top: 4px;
             }
+            @include _550{
+                display: none;
+            }
         }
         &-noticeButton:hover{
             color: white;
@@ -153,6 +175,18 @@
                 font-size: 26px;
                 padding: 10px;
             }
+            @include _550{
+                width: 35px;
+                height: 35px;
+                margin-top: 5px;
+                .profile-icon{
+                    font-size: 26px;
+                    padding: 5px;
+                }
+            }
+            @include _370{
+                display: none;
+            }
         }
         &-profileButtonActive{
             width: 46px;
@@ -168,6 +202,10 @@
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            @include _550{
+                width: 35px;
+                height: 35px;
+            }
             p{
                 font-size: 26px;
                 font-weight: bold;

@@ -14,7 +14,7 @@ const MoviePage = ({props}) => {
     
     // eslint-disable-next-line array-callback-return
     const actors = persons.map((item, i) => {
-        if(i < 4){
+        if(i < 5){
             return (
                 <div className="actor-block">
                     <img src={item.photo} alt="" name='1' className="actors" />
@@ -32,7 +32,15 @@ const MoviePage = ({props}) => {
                 <p className="singlePage__container-player-title">
                     Фильмы - {genre[0].name}
                 </p>
-                    <ReactPlayer url={Trailer} className='player' control={true}/>                
+                <div className="player-wrapper">
+                    <ReactPlayer 
+                        url={Trailer} 
+                        className='react-player' 
+                        playing
+                        width="100%"
+                        height="100%"
+                        controls={false}/>     
+                </div>               
                 <div className="singlePage__container-player-buttons">
                     <div className="left">
                         <button className="left-button">
