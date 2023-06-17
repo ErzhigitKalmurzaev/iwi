@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { CustomContext } from '../../context/context';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,9 +6,9 @@ import { RiHome6Line } from 'react-icons/ri';
 import { BiUser } from 'react-icons/bi';
 import { BsCollectionPlay, BsSearch, BsThreeDots } from 'react-icons/bs';
 
-import './bottomHeader.scss';
+import './bottomController.scss';
 
-const BottomHeader = () => {
+const BottomController = () => {
 
     const { user } = useContext(CustomContext);
     
@@ -56,4 +56,4 @@ const BottomHeader = () => {
   )
 }
 
-export default BottomHeader
+export default BottomController;
