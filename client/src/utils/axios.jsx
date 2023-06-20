@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const inctance = axios.create({
-  baseURL: "https://api.kinopoisk.dev/v1",
+  baseURL: "https://api.kinopoisk.dev/v1.3/",
   headers: {'Content-Type': 'application/json', "X-API-KEY": 'PHV75ZD-51ZM0G2-GV0ZTT0-QMV6581'}
 });
 

@@ -11,7 +11,7 @@ const MoviePage = ({props}) => {
     const [show, setShow] = useState(false);
 
     const {name, id, des, length, genre, rating, year, trailer, persons} = props;
-    
+    console.log("MOVIE PAGE")
     // eslint-disable-next-line array-callback-return
     const actors = persons.map((item, i) => {
         if(i < 5){
@@ -24,7 +24,7 @@ const MoviePage = ({props}) => {
         }
     });
 
-    const Trailer = trailer[0].url ? trailer[0].url : 'https://www.youtube.com/embed/CfihYWRWRTQ';
+    const Trailer = trailer ? trailer : 'https://www.youtube.com/embed/CfihYWRWRTQ';
 
     return (
         <div className="singlePage__container" key={id}>

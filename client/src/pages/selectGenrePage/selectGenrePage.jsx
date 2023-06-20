@@ -17,7 +17,6 @@ const SelectGenrePage = () => {
     const [content, setContent] = useState([]);
 
     const {type, genre} = useParams();
-    console.log()
     
     useEffect(() => {
         switch(type){
@@ -34,6 +33,7 @@ const SelectGenrePage = () => {
         }
         Object.entries(genres).forEach(([key, value]) => {
             if(key === genre){
+                console.log(genre)
                 setUrlGenre(value.name)
             }
         })
@@ -41,12 +41,29 @@ const SelectGenrePage = () => {
     }, [type, genre])
 
     const { data, isLoading, error } = useGetContentByGenreQuery(`type=${type}&genres.name=${urlGenre}`);
-
+    
     useEffect(() => {
         if (data && data.docs) {
           setContent(data.docs);
         }
-      }, [data]);
+        
+    }, [data]);
+
+      const _transformFilm = (item) => {
+        return {
+            name: item?.name,
+            id: item.id,
+            des: item.description,
+            genre: item.genres,
+            year: item.year,
+            poster: item?.poster?.previewUrl || 'https://i.redd.it/ikd0wcmwvsi01.jpg',
+            persons: item.persons,
+            length: item?.movieLength,
+            rating: item?.rating?.imdb,
+            similar: item.similarMovies,
+            country: item?.audience?.country[0]?.name
+        }
+    }
 
     const renderFilmsCard = (films) => {
 
@@ -55,15 +72,18 @@ const SelectGenrePage = () => {
             for(let i = 0; i < 24; i++){
                 elements.push(<Skeleton/>)
             }
+            console.log("LOADING")
             return elements;
-        }else if(error){
+        }else if(error || films.length < 1){
+            console.log("ERROR")
             return <p className='error-title'>Что-то пошло не так</p>
         }
 
         if(films && films.length > 0){
+            console.log(films)
             return films.map(item => {
                 return <Link style={{'textDecoration': 'none'}} to={`/watch/${item.id}`}>
-                            <Card props={item} key={item.id}/>
+                            <Card props={_transformFilm(item)} key={item.id}/>
                        </Link>
             })
         }

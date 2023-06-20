@@ -44,7 +44,7 @@ const Card = (props) => {
                     <TbCircleOff className='card-icon' onClick={handleIconClick}/>
                 </div>
                 <div className="info-contain">
-                    <p className="rating">{rating ? rating.toFixed(1) : '6.8'}</p>
+                    <p className="rating">{typeof rating === 'number' ? rating.toFixed(1) : '6.8'}</p>
                     <p className='info'>{year ? year : alternativeName}, {country} {genre ? genre.slice(0, 3).map(item => `, ${item.name}`) : ''}</p>
                     <p className="time">{length} минуты</p>
                 </div>

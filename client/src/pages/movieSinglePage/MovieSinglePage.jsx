@@ -21,7 +21,7 @@ const MovieSinglePage = () =>{
         getFilm(id)
             .then(data => setData(data))
             .then(() => setStatus('idle'))
-            .catch(() => setStatus('error'))
+            .catch((error) => console.log(error))
         
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id])

@@ -94,10 +94,10 @@ export const movieGenres = {
     'arthouse': { 'title': 'Артхаус', 'name': 'артхаус' },
     'action': { 'title': 'Боевики', 'name': 'боевик' },
     'western': { 'title': 'Вестерн', 'name': 'вестерн' },
-    'war': { 'title': 'Военные', 'name': 'военное' },
+    'war': { 'title': 'Военные', 'name': 'военный' },
     'detective': { 'title': 'Детективы', 'name': 'детектив' },
-    'family': { 'title': 'Для всей семьи', 'name': 'для всей семьи' },
-    'kids': { 'title': 'Для детей', 'name': 'для детей' },
+    'family': { 'title': 'Для всей семьи', 'name': 'семейный' },
+    'kids': { 'title': 'Для детей', 'name': 'детский' },
     'documentary': { 'title': 'Документальные', 'name': 'документальное' },
     'drama': { 'title': 'Драмы', 'name': 'драма' },
     'historical': { 'title': 'Исторические', 'name': 'история' },
@@ -110,7 +110,7 @@ export const movieGenres = {
     'adventure': { 'title': 'Приключения', 'name': 'приключение' },
     'sports': { 'title': 'Спорт', 'name': 'спорт' },
     'thriller': { 'title': 'Триллеры', 'name': 'триллер' },
-    'horror': { 'title': 'Ужасы', 'name': 'ужас' },
+    'horror': { 'title': 'Ужасы', 'name': 'ужасы' },
     'sci-fi': { 'title': 'Фантастика', 'name': 'фантастика' },
     'fantasy': { 'title': 'Фэнтези', 'name': 'фэнтези' }
   };
@@ -118,9 +118,9 @@ export const movieGenres = {
   export const seriesGenres = {
     'biography': { 'title': 'Биография', 'name': 'биография' },
     'action': { 'title': 'Боевики', 'name': 'боевик' },
-    'war': { 'title': 'Военные', 'name': 'военное' },
+    'war': { 'title': 'Военные', 'name': 'военный' },
     'detective': { 'title': 'Детективы', 'name': 'детектив' },
-    'family': { 'title': 'Для всей семьи', 'name': 'для всей семьи' },
+    'family': { 'title': 'Для всей семьи', 'name': 'семейный' },
     'kids': { 'title': 'Для детей', 'name': 'для детей' },
     'documentary': { 'title': 'Документальные', 'name': 'документальное' },
     'drama': { 'title': 'Дорамы', 'name': 'дорама' },
@@ -134,7 +134,7 @@ export const movieGenres = {
     'romantic': { 'title': 'Романтические', 'name': 'романтика' },
     'thriller': { 'title': 'Триллеры', 'name': 'триллер' },
     'turkish': { 'title': 'Турецкие', 'name': 'турецкий' },
-    'horror': { 'title': 'Ужасы', 'name': 'ужас' },
+    'horror': { 'title': 'Ужасы', 'name': 'ужасы' },
     'fantasy': { 'title': 'Фантастические', 'name': 'фантастика' }
   };
   
@@ -142,9 +142,9 @@ export const movieGenres = {
     'anime': { 'title': 'Аниме', 'name': 'аниме' },
     'action': { 'title': 'Боевик', 'name': 'боевик' },
     'detective': { 'title': 'Детектив', 'name': 'детектив' },
-    'adult': { 'title': 'Для взрослых', 'name': 'для взрослых' },
-    'family': { 'title': 'Для всей семьи', 'name': 'для всей семьи' },
-    'kids': { 'title': 'Для детей', 'name': 'для детей' },
+    'adult': { 'title': 'Для взрослых', 'name': 'взрослый' },
+    'family': { 'title': 'Для всей семьи', 'name': 'семейный' },
+    'kids': { 'title': 'Для детей', 'name': 'детский' },
     'drama': { 'title': 'Драма', 'name': 'драма' },
     'history': { 'title': 'История', 'name': 'история' },
     'comedy': { 'title': 'Комедия', 'name': 'комедия' },
@@ -156,7 +156,7 @@ export const movieGenres = {
     'series': { 'title': 'Сериалы', 'name': 'сериал' },
     'sports': { 'title': 'Спорт', 'name': 'спорт' },
     'thriller': { 'title': 'Триллер', 'name': 'триллер' },
-    'horror': { 'title': 'Ужасы', 'name': 'ужас' },
+    'horror': { 'title': 'Ужасы', 'name': 'ужасы' },
     'sci-fi': { 'title': 'Фантастика', 'name': 'фантастика' },
     'fantasy': { 'title': 'Фэнтези', 'name': 'фэнтези' }
   };

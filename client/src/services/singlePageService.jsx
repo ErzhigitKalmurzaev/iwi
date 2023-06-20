@@ -20,7 +20,7 @@ const useSinglePageService = () => {
             rating: item?.rating?.imdb,
             similar: item.similarMovies,
             trailer: item?.videos.trailers.filter(item => item.site === 'youtube'),
-            country: item?.audience[0]?.country[0]?.name
+            country: item?.audience?.country[0]?.name
         }
     }
 

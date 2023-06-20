@@ -25,8 +25,8 @@ function App() {
                       <Route exact path='/' element={<Home/>}/>
                       <Route exact path='/watch/:id' element={<MovieSinglePage/>}/>
                       <Route exaxt path='/:type' element={<SwitchPage/>}/>
-                      <Route exact path={'/:type/:genre'} element={<SelectGenrePage/>}/>
-                      <Route exact path={'/profile'} element={<ProfilePage/>}/>
+                      <Route exact path='/:type/:genre' element={<SelectGenrePage/>}/>
+                      <Route exact path='/profile' element={<ProfilePage/>}/>
                   </Routes>
               </Suspense>
           </main>

@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 import { movieGenres, seriesGenres, cartoonGenres } from '../../dictionary/Dictionary';
 
+import SearchModal from '../searchModal/SearchModal';
+
 import './header.scss';
 
 const Header = () => {
@@ -17,6 +19,7 @@ const Header = () => {
     const [type, setType] = useState('');
     const [genres, setGenres] = useState({});
     const [isHovered, setIsHovered] = useState(false);
+    const [show, setShow] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -46,6 +49,10 @@ const Header = () => {
         setIsHovered(false);
     };
 
+    const handleShowModal = () => {
+        setShow(false);
+    }
+
     const elements = Object.entries(genres).map(([key, value], i) => {
         return <Link to={`/${type}/${key}`} className='header__tab-container-left-genre-list-item'>{value.title}</Link>;
     });
@@ -71,7 +78,6 @@ const Header = () => {
                             </Link>
                             <Link className="header__left-items-item" 
                                 onMouseEnter={() => handleMouseEnter('tv-series')}
-                                onMouseLeave={handleMouseLeave}
                                 to={`/tv-series`}>
                                     Сериалы
                             </Link>
@@ -85,7 +91,7 @@ const Header = () => {
                 </div>
                 <div className="header__right">
                     <div className="header__right-redButton">Смотреть 30 дней бесплатно</div>
-                    <button className="header__right-searchButton">
+                    <button onClick={() => setShow(true)} className="header__right-searchButton">
                         <BiSearch className='search-icon'/>
                         <p className="header__right-searchButton-text">Поиск</p>
                     </button>
@@ -106,7 +112,7 @@ const Header = () => {
                     </Link>
                 </div>
                 { isHovered && 
-                    <div className='header__tab'
+                    <div className={`header__tab ${isHovered ? 'tab-hover' : ''}`}
                         onMouseEnter={() => setIsHovered(true)}
                         onMouseLeave={handleMouseLeave}
                         >
@@ -129,6 +135,10 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+                }
+                {
+                    show && <SearchModal
+                                    onClose={handleShowModal}/>
                 }        
             </div>
         </header>

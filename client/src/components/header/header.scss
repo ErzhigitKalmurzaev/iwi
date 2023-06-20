@@ -51,8 +51,8 @@
         height: 400px;
         background-color: #1f1b2e;
         z-index: 100;
-        display: block;
-        transition: 0.3s ease-in;
+        opacity: 0;
+        visibility: hidden;
         grid-column: span 2;
         border-radius: 0 0 10px 10px;
         &-title{
@@ -99,10 +99,12 @@
         &-redButton{
             min-width: 190px;
             height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: #ea003d;
             color: white;
             font-family: 'Inter';
-            text-align: center;
             border: none;
             border-radius: 8px;
             margin-top: 9px;
@@ -219,16 +221,24 @@
     }
 }
 
+.tab-hover{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease-in-out;
+}
 
 .hover{
     background-color: #1f1b2e;
     border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease-in;
 }
 
 .dropDown{
     width: 60%;
     display: flex;
+    opacity: 0.8;
     justify-content: space-between;
+    transition: display 0.3s ease-in;
 }
 
 .header__tab:hover .header{
